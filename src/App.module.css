@@ -4,7 +4,17 @@
   padding: 0 1rem;
   
   display: grid;
-  grid-template-columns: 256px 1fr; /*rf = tamanhp flexivel */
+  grid-template-columns: 256px 1fr; /*rf = tamanho flexivel */
   gap: 2rem;
   align-items: flex-start;
+}
+
+@media (max-width: 768px) { /* aplicando 1 coluna para telas menores de 768px, ex: mobile */
+  html { 
+    font-size: 87.5%;
+  }
+
+  .wrapper {
+    grid-template-columns: 1fr;
+  }
 }
